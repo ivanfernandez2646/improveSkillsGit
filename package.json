@@ -1,0 +1,19 @@
+{
+  "name": "listado_notas",
+  "version": "1.0.0",
+  "description": "Creación y edición de notas rápidas para el día a día",
+  "main": "app.js",
+  "scripts": {
+    "app": "node .",
+    "dateTemplate": "pug public/dateTemplate.pug -c -n dateTemplate",
+    "noteTemplate": "pug public/noteTemplate.pug -c -n noteTemplate"
+  },
+  "author": "Ivan Fernandez Campos",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "dateformat": "^3.0.3",
+    "express": "^4.17.1",
+    "firebase": "^7.15.4"
+  }
+}

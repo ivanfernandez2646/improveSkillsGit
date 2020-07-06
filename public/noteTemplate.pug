@@ -1,0 +1,13 @@
+each item in listNotesToInsert["notes"]
+    div(class="card m-5 note")&attributes({'id': item.id, 'style': {'background-color': item.color}})
+        span(class="pt-3 pl-3") #{item.datetimeString}
+            button(type="button" class="close deleteNote mr-3" aria-label="Close")
+                span(aria-hidden="true") &times;
+        hr
+        div(class="card-body")
+            span
+                h5(class="card-title titleNote" contenteditable="true") #{item.title}
+                    input(type="color" style="float:right" class="changeBackgroundNote" value="#f1c40f")&attributes({'value': item.color})
+            p(class="card-text textNote" contenteditable="true") #{item.text}
+
+            

@@ -1,0 +1,16 @@
+.note{
+    width: 250px;
+    height: 250px;
+    background-color: #f1c40f;
+    overflow-y: auto;
+}
+
+.note > hr{
+    margin-bottom: 0;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	width: 25px;
+	height: 25px;
+}

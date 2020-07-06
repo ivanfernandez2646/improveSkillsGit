@@ -1,0 +1,7 @@
+each item in listDatesToInsert["itemsDate"]
+    li(class="list-group-item d-flex align-items-center date")&attributes({'id': item.date})
+        div( class="flex-grow-1") #{item.dateString}
+        span(class="mr-3 badge badge-pill badge-danger countNotes") #{item.countNotes} notas
+        button(type="button" class="close deleteDate" aria-label="Close" disabled)
+            span(aria-hidden="true") &times;
+        
